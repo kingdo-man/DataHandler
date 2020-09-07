@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+      url: jdbc:mysql://localhost:3306/data_handler?characterEncoding=utf8
+      username: root
+      password: 12345678
+      driver: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:/xml/*Mapper.xml
+  type-aliases-package: com.me.datahandler.entit
+
+#logging:
+  #level:
+    #com.me.datahandler.dao.mapper: debug
